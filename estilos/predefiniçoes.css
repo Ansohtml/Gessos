@@ -1,0 +1,57 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'arthilabold';
+    src: url('fonte/ARTHILA BOLD.ttf') format('truetype');
+    font-size: 25px;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --cor01: #0F1594;
+    --cor02: #4D55FF;
+    --cor03: #2D36E0;
+    --cor04: #998847;
+    --cor05: #E0D5A6;
+
+    --font-padrao: 'Arial, sans-serif';
+    --font-destaque: 'arthilabold';
+}
+
+body {
+    background-color: aqua;
+}
+
+header {
+    border: 5px solid black;
+    height: 175px;
+    padding: 20px;
+}
+
+header>h1 {
+    text-align: center;
+    font-family: var(--font-destaque);
+    margin-top: 20px;
+}
+
+main {
+    max-width: 800px;
+    min-width: 320px;
+    border: 5px solid black;
+    margin: auto;
+}
+
+main img {
+    width: 100%;
+    margin-top: 25px;
+}
+
+main h1 {
+    font-family: 'arthilabold';
+    color: #4D55FF;
+    margin-top: 10px;
+    text-align: center;
+}

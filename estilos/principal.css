@@ -1,0 +1,145 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'arthila';
+    src: url('fonte/ARTHILA BOLD.ttf') format(truetype);
+    font-weight: bold;
+}
+
+:root {
+    --cor01: #0F1594;
+    --cor02: #4D55FF;
+    --cor03: #2D36E0;
+    --cor04: #998847;
+    --cor05: #E0D5A6;
+
+    --font-padrao: 'Arial, sans-serif';
+    --font-destaque: 'arthila';
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--cor05);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    background-image: linear-gradient(180deg, var(--cor03), var(--cor01));
+    height: 175px;
+    padding: 20px;
+}
+
+header>h1 {
+    font-family: var(--font-destaque);
+    text-align: center;
+    font-size: 5em;
+    color: #ffffff;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.49);
+}
+
+header h2 {
+    color: #E0D5A6;
+    text-align: center;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.49);
+}
+
+nav {
+    background-color: #0F1594;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.299);
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 5px 0px 5px;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+nav a:hover {
+    transition-duration: 1s;
+    color: aqua;
+    background-image: linear-gradient(180deg, var(--cor02), var(--cor01));
+    border-radius: 5px;
+}
+
+main {
+    max-width: 835px;
+    min-width: 320px;
+    background-color: #ffffff;
+    margin: auto;
+    margin-bottom: 10px;
+    padding: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.462);
+}
+
+main h1 {
+    text-align: center;
+    color: #4D55FF;
+    margin-top: 10px;
+}
+
+main h2 {
+    margin-top: 10px;
+    color: #4D55FF;
+}
+
+main img {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.serviço {
+    text-indent: 0px;
+}
+
+article {
+    line-height: 1.8em;
+    text-align: justify;
+    text-indent: 20px;
+    margin: 10px 0px ;
+}
+
+aside {
+    background-color: #4D55FF;
+    width: 500px;
+    margin: auto;
+    margin-top: 10px;
+}
+
+aside > ul {
+    columns: 2;
+    list-style-position: inside;
+}
+
+aside a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.trecho {
+    color: #ffffff;
+}
+
+footer {
+    background-color: #0F1594;
+    padding: 10px;
+}
+
+footer p {
+    color: rgb(205, 205, 205);
+    text-align: center;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
