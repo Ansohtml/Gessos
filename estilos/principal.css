@@ -18,7 +18,12 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: var(--cor05);
+    background-image: url("../imagem/sanca/sanca57.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: 100% 100%;
 }
 
 * {
@@ -108,6 +113,13 @@ aside {
     width: 500px;
     margin: auto;
     margin-top: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+aside > h2#concluido {
+    color: white;
+    text-align: center;
 }
 
 aside > ul {
@@ -123,6 +135,13 @@ aside a {
 
 .trecho {
     color: #ffffff;
+}
+
+.trecho:hover {
+    background-color: #2D36E0;
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: -5px 5px 6px rgba(0, 0, 0, 0.345);
 }
 
 footer {
