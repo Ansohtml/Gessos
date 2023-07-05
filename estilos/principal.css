@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @font-face {
     font-family: 'arthila';
-    src: url('fonte/ARTHILA BOLD.ttf') format(truetype);
+    src: url('fonte/ARTHILA BOLD.ttf') format('truetype');
     font-weight: bold;
 }
 
@@ -13,7 +13,7 @@
     --cor05: #E0D5A6;
 
     --font-padrao: 'Arial, sans-serif';
-    --font-destaque: 'arthila';
+    --font-destaque: 'arthila', Arial;
 }
 
 body {
@@ -37,15 +37,28 @@ header {
     padding: 20px;
 }
 
+
 header>h1 {
+    margin: auto;
+    margin-bottom: 2px;
+    width: 250px;
+    height: 80px;
     font-family: var(--font-destaque);
     text-align: center;
     font-size: 5em;
     color: #ffffff;
     text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.49);
+    
+}
+
+header>h1:hover {
+    font-size: 5.5em;
+    margin-bottom: 3px;
 }
 
 header h2 {
+    width: 220px;
+    margin: auto;
     color: #E0D5A6;
     text-align: center;
     text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.49);
@@ -87,25 +100,27 @@ main h1 {
     margin-top: 10px;
 }
 
-main h2 {
-    margin-top: 10px;
-    color: #4D55FF;
-}
-
-main img {
-    width: 100%;
-    margin-top: 10px;
-}
-
 .serviço {
     text-indent: 0px;
 }
 
 article {
+    max-width: 600px;
+    min-width: 320px;
     line-height: 1.8em;
     text-align: justify;
     text-indent: 20px;
-    margin: 10px 0px ;
+    margin: auto;
+}
+
+article img {
+    width: 100%;
+    margin-top: 10px;
+}
+
+article h2 {
+    margin-top: 10px;
+    color: #4D55FF;
 }
 
 aside {
